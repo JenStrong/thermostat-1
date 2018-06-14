@@ -29,19 +29,27 @@ describe('Thermostat', function() {
 
   it('has powersaving mode on by default', function(){
     expect(thermostat.isPowerSavingModeOn()).toBe(true);
-  })
+  });
 
   it('can switch PSM off', function(){
     thermostat.switchPowerSavingModeOff();
     expect(thermostat.isPowerSavingModeOn()).toBe(false);
-  })
+  });
 
   it('can switch PSM back on', function() {
     thermostat.switchPowerSavingModeOff();
     expect(thermostat.isPowerSavingModeOn()).toBe(false);
     thermostat.switchPowerSavingModeOn();
     expect(thermostat.isPowerSavingModeOn()).toBe(true);
-  })
+  });
+
+  it('can be reset to the default temperature', function() {
+    for (var i = 0; i < 6; i++) {
+      thermostat.up();
+    }
+    thermostat.resetTemperature();
+    expect(thermostat.getCurrentTemperature()).toEqual(20);
+  });
 
   describe('when power saving mode is on', function() {
     it('has a maximum temperature of 25 degrees', function() {

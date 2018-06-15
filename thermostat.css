@@ -1,11 +1,69 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+#main {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#temperature {
+  font-size: 150px;
+  padding: auto;
+  margin: auto;
+}
+
+.btn {
+  -webkit-border-radius: 23;
+  -moz-border-radius: 23;
+  border-radius: 23px;
+  text-shadow: 0px 0px 3px #332426;
+  color: #ffffff;
+  font-size: 15px;
+  background: #4e5c66;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-up {
+  background: #d11b1b;
+}
+
+.btn-down {
+  background: #378bc7;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
 .low-usage {
   color: green;
 }
 
 .medium-usage {
-  color: black;
+  color: white;
 }
 
 .high-usage {
   color: red;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
 }

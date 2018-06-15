@@ -3,11 +3,12 @@
   <head>
     <title>Thermostat</title>
     <link rel="stylesheet" href="thermostat.css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
-    <section>
-      <section>
+    <section id="main">
+      <section id="temp">
         <h1>Current temperature: <span id="current-temperature"></span></h1>
         <form id="select-city">
           <input id="current-city" type="text" placeholder="Enter a city"></input>
@@ -15,13 +16,19 @@
         </form>
       </section>
       <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
-        power saving mode is <span id="power-saving-status">on</span>
-        <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSM off</button>
+        <h2 id="temperature"></h2>
       </p>
+      <section>
+        <button class="btn btn-up" id="temperature-up">+</button>
+        <button class="btn btn-down" id="temperature-down">-</button>
+        <button class="btn" id="temperature-reset">reset</button>
+      </section>
+        <p>Power saving mode is <span id="power-saving-status">on</span></p>
+        <button class="btn" id="powersaving-on">PSM on</button>
+        <button class="btn" id="powersaving-off">PSM off</button>
+    </section>
+    <section class="fixed">
+      Made by <a href="https://github.com/simone-smith">Simone</a>
     </section>
     <script src="src/thermostat.js"></script>
     <script src="interface.js"></script>

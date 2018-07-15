@@ -63,7 +63,7 @@ Low usage is indicated with a green temperature display and high usage is indica
 The app uses an external API from OpenWeatherMap to display the temperature in cities around the world.
 
 Screenshot
-[Screenshot](https://github.com/simone-smith/thermostat/blob/master/thermostat.png)
+![Screenshot](https://github.com/simone-smith/thermostat/blob/master/thermostat.png)
 
 ### How to use
 - Fork this repo, and clone to your local machine

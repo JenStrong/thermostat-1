@@ -1,22 +1,37 @@
-* {
+/* * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+} */
+
+body {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   box-sizing: border-box;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: black;
   color: white;
+  text-align: center;
 }
 
 #main {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
+  padding: 100px;
+  /* border: 1px solid white; */
 }
 
 #temperature {
   font-size: 150px;
   padding: auto;
   margin: auto;
+}
+
+.temp {
+  font-size: 25px;
+  color: #0f284f;
+  font-weight: bold;
 }
 
 .btn {

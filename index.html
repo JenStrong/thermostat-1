@@ -3,12 +3,12 @@
   <head>
     <title>Thermostat</title>
     <link rel="stylesheet" href="thermostat.css">
-    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
     <section id="main">
-      <section id="temp">
+      <section class="temp">
         <h1>Current temperature: <span id="current-temperature"></span></h1>
         <form id="select-city">
           <input id="current-city" type="text" placeholder="Enter a city"></input>
@@ -23,7 +23,7 @@
         <button class="btn btn-down" id="temperature-down">-</button>
         <button class="btn" id="temperature-reset">reset</button>
       </section>
-        <p>Power saving mode is <span id="power-saving-status">on</span></p>
+        <p class="temp">Power saving mode is <span id="power-saving-status">on</span></p>
         <button class="btn" id="powersaving-on">PSM on</button>
         <button class="btn" id="powersaving-off">PSM off</button>
     </section>
